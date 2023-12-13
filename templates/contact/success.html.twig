@@ -1,29 +1,36 @@
 {% extends 'base.html.twig' %}
 
 
-
 {% block body %}
-   <b><strong> <h1 align="center" style="color: red;">Contact</h1></strong></b>
-<br>
-     <div id="form" align="center">
-     <form action="" method="post">
-     
-        <label for="name" >Nom:</label>
-        <input type="text" id="name" name="name" rows="4" cols="70" required>
-        <br> <br> 
+	<b>
+		<strong>
+			<h1 align="center" style="color: red;">Contact</h1>
+		</strong>
+	</b>
+	<br>
+	<div id="form" align="center">
+		<form action="mailto:your.email@example.com" method="post">
 
-        <label for="firstName">Prénom:</label>
-        <input type="text" id="firstName" name="firstName" required>
- <br> <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
- <br> <br> 
-        <label for="message">Message:</label>
-     <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+			<label for="name">Nom:</label>
+			<input type="text" id="name" name="name" rows="4" cols="70" required>
+			<br>
+			<br>
 
-        <br> <br> 
-        <button type="submit" class="btn btn-success">
-            <i class="fas fa-plus"></i>Contact</button>
-    </form>
-    </div>
+			<label for="firstName">Prénom:</label>
+			<input type="text" id="firstName" name="firstName" required>
+			<br>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<br>
+			<br>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+			<br>
+			<br>
+			<button type="submit" class="btn btn-success">
+				<i class="fas fa-plus"></i>Contact</button>
+		</form>
+	</div>
 {% endblock %}
